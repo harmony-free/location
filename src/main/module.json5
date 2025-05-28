@@ -6,6 +6,23 @@
       "default",
       "tablet",
       "2in1"
+    ],
+    "requestPermissions": [
+      {
+        "name": "ohos.permission.APPROXIMATELY_LOCATION",
+        "reason":'$string:Location_Reason',
+        "usedScene": {
+          "when": "always",
+        }
+      },
+      {
+        "name": "ohos.permission.LOCATION",
+        "reason": '$string:Location_Reason',
+        "usedScene": {
+          "abilities": ["EntryAbility"],
+          "when": "always"
+        }
+      }
     ]
   }
 }
